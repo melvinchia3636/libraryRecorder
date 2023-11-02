@@ -5,8 +5,8 @@ import {
   View,
   StatusBar,
   ScrollView,
-  TouchableOpacity,
   Pressable,
+  Image,
 } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
 import {
@@ -20,7 +20,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import {
   ActivityIndicator,
-  configureFonts,
   Provider as PaperProvider,
   TextInput,
 } from "react-native-paper";
@@ -69,11 +68,70 @@ function Input({
   );
 }
 
-function Main({ navigation }) {
-  const [hasPermission, setHasPermission] = useState(null);
+function Main({ navigation }: { navigation: any }) {
+  const [hasPermission, setHasPermission] = useState<boolean>();
 
-  function updateDatabase(isbn: string) {
-    fetch("http://192.168.1.5:3000/add", {
+  async function updateDatabase(isbn: string) {
+    const bookData = await fetch(`https://openlibrary.org/isbn/${isbn}.json`)
+      .then((response) => response.json())
+      .catch(() => {
+        console.log(`https://openlibrary.org/isbn/${isbn}.json`);
+      });
+    let data: { [key: string]: any } = {};
+
+    if (bookData && bookData?.error !== "notfound") {
+      data = {
+        title: bookData?.title,
+        author: [],
+        publisher: bookData?.publishers?.join(", "),
+        year: bookData?.publish_date || "",
+        pages: String(bookData?.number_of_pages || ""),
+        language: [],
+        thumbnail: `https://covers.openlibrary.org/b/isbn/${isbn}-M.jpg`,
+      };
+      for (let lang of bookData?.languages || []) {
+        const language = await fetch(`https://openlibrary.org${lang?.key}.json`)
+          .then((response) => response.json())
+          .catch(() => {
+            console.log(`https://openlibrary.org${lang?.key}.json`);
+          });
+        data = {
+          ...data,
+          language: [...data.language, language?.name],
+        };
+      }
+      data.language = data.language.join(", ");
+
+      for (let author of bookData?.authors || []) {
+        const authorData = await fetch(
+          `https://openlibrary.org${author?.key}.json`
+        )
+          .then((response) => response.json())
+          .catch(() => {
+            console.log(`https://openlibrary.org${author?.key}.json`);
+          });
+        data = {
+          ...data,
+          author: [...data.author, authorData?.name],
+        };
+      }
+      data.author = data.author.join(", ");
+    } else {
+      const res = await fetch(
+        "http://192.168.0.105:3000/find-in-tw-library/" + isbn
+      )
+        .then((response) => response.json())
+        .catch(() => {});
+
+      if (JSON.stringify(res) !== "{}") {
+        data = {
+          ...data,
+          ...res,
+        };
+      }
+    }
+
+    fetch("http://192.168.0.105:3000/add", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -81,6 +139,7 @@ function Main({ navigation }) {
       },
       body: JSON.stringify({
         isbn: isbn,
+        ...data,
       }),
     })
       .then((response) => response.json())
@@ -110,7 +169,7 @@ function Main({ navigation }) {
 
   function fetchBookList() {
     setBookList([]);
-    fetch("http://192.168.1.5:3000/list")
+    fetch("http://192.168.0.105:3000/list")
       .then((response) => response.json())
       .then((responseJson) => {
         setBookList(responseJson);
@@ -120,6 +179,7 @@ function Main({ navigation }) {
   const [bookList, setBookList] = useState<
     {
       isbn: string;
+      [key: string]: string | number | boolean | string[];
     }[]
   >([]);
   const [isScanning, setIsScanning] = useState(false);
@@ -139,11 +199,11 @@ function Main({ navigation }) {
     type,
     data,
   }: {
-    type: number;
+    type: string;
     data: string;
   }) => {
     console.log(data);
-    if (!bookList.some((e) => e.isbn === data) && type === 32) {
+    if (!bookList.some((e) => e.isbn === data) && parseInt(type) === 32) {
       setIsScanning(false);
       playSound(data);
     }
@@ -160,7 +220,25 @@ function Main({ navigation }) {
     <View className="w-full h-screen bg-stone-100 py-6 flex items-center justify-between">
       <ScrollView className="w-full mb-8 px-6">
         {bookList.map((book, index) => (
-          <View className="border-b border-stone-300 py-4 block px-2">
+          <View
+            key={book.isbn}
+            className="border-b border-stone-300 py-4 px-2 flex flex-col justify-start"
+          >
+            {book.thumbnail && (
+              <Image
+                source={{
+                  uri: book.thumbnail,
+                }}
+                style={{
+                  height: 200,
+                  objectFit: "contain",
+                  width: "50%",
+                  marginBottom: 10,
+                  backgroundColor: "rgb(231,229,228)",
+                  borderRadius: 6,
+                }}
+              />
+            )}
             <Text
               className="text-left w-full text-xs text-stone-400"
               key={index}
@@ -255,7 +333,7 @@ function Main({ navigation }) {
         </View>
       ) : (
         <BarCodeScanner
-          onBarCodeScanned={isScanning ? handleBarCodeScanned : undefined}
+          onBarCodeScanned={isScanning ? handleBarCodeScanned : () => {}}
           className="w-full h-96"
         />
       )}
@@ -264,7 +342,7 @@ function Main({ navigation }) {
   );
 }
 
-const Edit = ({ navigation, route }) => {
+const Edit = ({ navigation, route }: { navigation: any; route: any }) => {
   const [isbn, setIsbn] = useState("");
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
@@ -272,10 +350,11 @@ const Edit = ({ navigation, route }) => {
   const [year, setYear] = useState("");
   const [pages, setPages] = useState("");
   const [language, setLanguage] = useState("");
+  const [thumbnail, setThumbnail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    fetch("http://192.168.1.5:3000/list/" + route.params._id, {
+    fetch("http://192.168.0.105:3000/list/" + route.params._id, {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -291,6 +370,7 @@ const Edit = ({ navigation, route }) => {
         setYear(responseJson.year || "");
         setPages(responseJson.pages || "");
         setLanguage(responseJson.language || "");
+        setThumbnail(responseJson.thumbnail || "");
       });
   }, []);
 
@@ -311,11 +391,12 @@ const Edit = ({ navigation, route }) => {
         <Input label="Year" state={year} setState={setYear} />
         <Input label="Pages" state={pages} setState={setPages} />
         <Input label="Language" state={language} setState={setLanguage} />
+        <Input label="Thumbnail" state={thumbnail} setState={setThumbnail} />
       </View>
       <Pressable
         onPress={() => {
           setIsLoading(true);
-          fetch("http://192.168.1.5:3000/update/" + route.params._id, {
+          fetch("http://192.168.0.105:3000/update/" + route.params._id, {
             method: "PUT",
             headers: {
               Accept: "application/json",
@@ -329,6 +410,7 @@ const Edit = ({ navigation, route }) => {
               year: year,
               pages: pages,
               language: language,
+              thumbnail: thumbnail,
             }),
           })
             .then((response) => response.json())
