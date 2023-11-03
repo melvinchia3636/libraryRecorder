@@ -1,0 +1,1022 @@
+[{
+  "_id": {
+    "$oid": "65436a2b3e1216078a57d2f2"
+  },
+  "isbn": "9781264258338",
+  "title": "Schaum's Outline of Calculus",
+  "author": "Elliott Mendelson",
+  "publisher": "McGraw-Hill Education",
+  "year": "2021",
+  "pages": "560",
+  "language": "English",
+  "thumbnail": "https://m.media-amazon.com/images/I/61uWJ5EB3VL._AC_UF1000,1000_QL80_.jpg",
+  "callnum": "515 EL46 2021"
+},
+{
+  "_id": {
+    "$oid": "65436a4b3e1216078a57d2f3"
+  },
+  "isbn": "9780130950055",
+  "author": "Strauss, Bradley, Smith",
+  "language": "English",
+  "pages": "1066",
+  "publisher": "Pearson Education",
+  "title": "Calculus 3rd Edition",
+  "year": "2002",
+  "thumbnail": "https://m.media-amazon.com/images/I/51XDIoU8YTL._AC_UF1000,1000_QL80_.jpg",
+  "callnum": "515 ST912 2022"
+},
+{
+  "_id": {
+    "$oid": "65436b473e1216078a57d2f4"
+  },
+  "isbn": "9781305266728",
+  "title": "Calculus, International Metric Edition Eighth Edition",
+  "author": "James Stewart",
+  "publisher": "Cengage Learning",
+  "year": "2001",
+  "pages": "1367",
+  "language": "English",
+  "thumbnail": "https://covers.openlibrary.org/b/isbn/9781305266728-M.jpg",
+  "callnum": "515 J31 2001"
+},
+{
+  "_id": {
+    "$oid": "65436d673e1216078a57d2f5"
+  },
+  "isbn": "9781292253220",
+  "callnum": "515 T463 2019",
+  "title": "Thomas' Calculus in SI Units",
+  "author": "Joel R. Hass, Christopher E. Heil, Maurice D. Weir",
+  "publisher": "Pearson, Pearson Education",
+  "year": "2019",
+  "pages": "1232",
+  "language": "English",
+  "thumbnail": "https://covers.openlibrary.org/b/isbn/9781292253220-M.jpg"
+},
+{
+  "_id": {
+    "$oid": "65436dac3e1216078a57d2f6"
+  },
+  "isbn": "9781119629900",
+  "title": "Basic Physics",
+  "author": "Karl F. Kuhn, Frank Noschese",
+  "publisher": "Wiley & Sons, Limited, John",
+  "year": "2020",
+  "pages": "304",
+  "language": "English",
+  "thumbnail": "https://cdn.kobo.com/book-images/b2a37692-468a-4595-a967-e7b73c2c4340/1200/1200/False/basic-physics-2.jpg",
+  "callnum": "530"
+},
+{
+  "_id": {
+    "$oid": "65436dcb3e1216078a57d2f7"
+  },
+  "isbn": "9781119363026",
+  "title": "Coding All-in-One For Dummies (For Dummies (Computers))",
+  "author": "Nikhil Abraham",
+  "publisher": "For Dummies",
+  "year": "2017",
+  "pages": "800",
+  "language": "English",
+  "thumbnail": "https://covers.openlibrary.org/b/isbn/9781119363026-M.jpg",
+  "callnum": "005.133"
+},
+{
+  "_id": {
+    "$oid": "65436de23e1216078a57d2f8"
+  },
+  "isbn": "9781119612582",
+  "title": "Flutter for Dummies",
+  "author": "Barry Burd",
+  "publisher": "Wiley & Sons Canada, Limited, John",
+  "year": "2019",
+  "pages": "363",
+  "language": "English",
+  "thumbnail": "https://cdn.kobo.com/book-images/144f9f6d-c869-47d9-9615-4186595b19c2/1200/1200/False/flutter-for-dummies.jpg",
+  "callnum": "005.1"
+},
+{
+  "_id": {
+    "$oid": "65436e073e1216078a57d2f9"
+  },
+  "isbn": "9781119327639",
+  "title": "Data science for dummies",
+  "author": "Lillian Pierson",
+  "year": "2017",
+  "pages": "364",
+  "language": "English",
+  "thumbnail": "https://m.media-amazon.com/images/I/71j0QuAKReL._AC_UF1000,1000_QL80_.jpg",
+  "publisher": "Wiley & Sons Canada, Limited, John",
+  "callnum": "005.1"
+},
+{
+  "_id": {
+    "$oid": "65436e393e1216078a57d2fa"
+  },
+  "isbn": "9789863127246",
+  "author": "陳會安",
+  "language": "繁體中文",
+  "pages": "",
+  "publisher": "旗標科技股份有限公司",
+  "thumbnail": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/093/26/0010932677.jpg&v=62ea4e36k&w=375&h=375",
+  "title": "Python 資料科學實戰教本",
+  "year": "2022",
+  "callnum": "006.312"
+},
+{
+  "_id": {
+    "$oid": "65436e9f3e1216078a57d2fb"
+  },
+  "isbn": "9781405279703",
+  "title": "Minecraft",
+  "author": "Mojang",
+  "publisher": "Egmont Books, Limited",
+  "year": "2015",
+  "pages": "384",
+  "language": "English",
+  "thumbnail": "https://m.media-amazon.com/images/I/919riZD8ItL._AC_UF1000,1000_QL80_.jpg",
+  "callnum": "793.932"
+},
+{
+  "_id": {
+    "$oid": "65436ec23e1216078a57d2fc"
+  },
+  "isbn": "9789864344741",
+  "author": "王碩, 孫洋洋",
+  "language": "繁體中文",
+  "pages": "555",
+  "publisher": "博碩文化股份有限公司",
+  "thumbnail": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/085/00/0010850077.jpg&v=5e47c838k&w=375&h=375",
+  "title": "Python GUI 程式設計：PyQy5 實戰",
+  "year": "2020",
+  "callnum": "005.133"
+},
+{
+  "_id": {
+    "$oid": "65437c0a3e1216078a57d2fd"
+  },
+  "isbn": "9780007267453",
+  "title": "Collins Advanced Science - Biology",
+  "author": "Mike Boyle, Kathryn Senior",
+  "publisher": "HarperCollins Publishers Limited, Collins",
+  "year": "2008",
+  "pages": "684",
+  "language": "English",
+  "thumbnail": "https://covers.openlibrary.org/b/isbn/9780007267453-M.jpg",
+  "callnum": "570"
+},
+{
+  "_id": {
+    "$oid": "65437c543e1216078a57d2fe"
+  },
+  "isbn": "9780748752997",
+  "title": "A-Level Chemistry",
+  "author": "E. N. Ramsden",
+  "publisher": "Nelson Thornes, Oxford University Press",
+  "year": "2000",
+  "pages": "784",
+  "language": "English",
+  "thumbnail": "https://covers.openlibrary.org/b/isbn/9780748752997-M.jpg",
+  "callnum": "540"
+},
+{
+  "_id": {
+    "$oid": "65438513fd308b11d117910b"
+  },
+  "isbn": "9789864342303",
+  "author": "秋聲",
+  "title": "秋聲秿你玩Python : 邊玩邊學更易上手",
+  "year": "2017",
+  "publisher": "新北市 : 博碩, 2017[民106]",
+  "pages": "256",
+  "language": "繁體中文",
+  "thumbnail": "https://www.drmaster.com.tw/Cover/big/MP21720.jpg",
+  "callnum": "005.133"
+},
+{
+  "_id": {
+    "$oid": "654385af408525c07b89adc9"
+  },
+  "isbn": "9789863016892",
+  "author": "陳敏清",
+  "title": "看!就是比你早下班 : 超實用的Microsoft office速成技(Word x Excel X PowerPoint)",
+  "year": "2016",
+  "publisher": "大眾國際書局",
+  "pages": "",
+  "language": "簡體中文",
+  "thumbnail": "https://d26olvxuieoyaa.cloudfront.net/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9789863016892_bc.jpg",
+  "callnum": "650.0285"
+},
+{
+  "_id": {
+    "$oid": "654385f9408525c07b89adca"
+  },
+  "isbn": "9789572243824",
+  "author": "恒盛杰資訊",
+  "title": "我的簡報會說話 : 釋放PPT的思考力和說服力",
+  "year": "2015",
+  "publisher": "松崗資產管理",
+  "pages": "",
+  "language": "繁體中文",
+  "thumbnail": "https://s.eslite.dev/Upload/Product/201909/o/637037057482912900.jpg",
+  "callnum": "650.0285"
+},
+{
+  "_id": {
+    "$oid": "6543862e408525c07b89adcb"
+  },
+  "isbn": "9789867309549",
+  "author": "廖仁國",
+  "title": "OpenOffice.org 範例學習很Easy",
+  "year": "2010",
+  "publisher": "松崗資產管理",
+  "pages": "263",
+  "language": "繁體中文",
+  "thumbnail": "https://www.iread.com.tw/ProductFile/T0012600/B000201395/B000201395-B.jpg",
+  "callnum": "650.0285"
+},
+{
+  "_id": {
+    "$oid": "6543868c408525c07b89adcc"
+  },
+  "isbn": "9789570853551",
+  "author": "備前康則",
+  "title": "全圖解!AI知識一本通 : 用故事讓你三小時輕鬆搞懂人工智慧",
+  "year": "2019",
+  "publisher": "聯經",
+  "pages": "207",
+  "language": "繁體中文",
+  "thumbnail": "https://nrapp-prd.oss-cn-hongkong.aliyuncs.com/prod/9789570853551/9789570853551_bc_01.jpg?x-oss-process=image/resize,w_500",
+  "callnum": "006.3"
+},
+{
+  "_id": {
+    "$oid": "654386f3408525c07b89adcd"
+  },
+  "isbn": "9787511359186",
+  "author": "善从",
+  "title": "中國皇帝全傳",
+  "year": "2016",
+  "publisher": "中國華僑出版社",
+  "pages": "343",
+  "language": "簡體中文",
+  "thumbnail": "https://pictures.abebooks.com/isbn/9787511359186-us.jpg",
+  "callnum": "951.0099"
+},
+{
+  "_id": {
+    "$oid": "65438cfd9434478daa15b3ca"
+  },
+  "isbn": "9787511344977",
+  "author": "黎娜",
+  "language": "簡體中文",
+  "pages": "536",
+  "publisher": "中國華僑出版社",
+  "thumbnail": "https://m.media-amazon.com/images/I/71TIssBhVBL._AC_UF1000,1000_QL80_.jpg",
+  "title": "全世界优等生都在做的2000个思维游戏",
+  "year": "2014",
+  "callnum": "793.73"
+},
+{
+  "_id": {
+    "$oid": "65438d6c9434478daa15b3cb"
+  },
+  "isbn": "9787511345042",
+  "author": "刘晓菲",
+  "language": "简体中文",
+  "pages": "429",
+  "publisher": "中國華僑出版社",
+  "thumbnail": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/CN1/113/82/CN11138276.jpg&v=53e89bedk&w=375&h=375",
+  "title": "奧秘世界",
+  "year": "2014",
+  "callnum": "793.73"
+},
+{
+  "_id": {
+    "$oid": "65438de59434478daa15b3cc"
+  },
+  "isbn": "9787511365934",
+  "author": "韩佳媛",
+  "language": "简体中文",
+  "pages": "430",
+  "publisher": "中國華僑出版社",
+  "thumbnail": "https://m.media-amazon.com/images/I/71HP+68TPiL._AC_UF1000,1000_QL80_.jpg",
+  "title": "图解情绪控制方法",
+  "year": "2017",
+  "callnum": "155.24"
+},
+{
+  "_id": {
+    "$oid": "65438e4d9434478daa15b3cd"
+  },
+  "isbn": "9787550241053",
+  "author": "文思源",
+  "language": "简体中文",
+  "pages": "311",
+  "publisher": "北京联合出版公司",
+  "thumbnail": "https://d26olvxuieoyaa.cloudfront.net/catalog/product/cache/1/small_image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/9/7/9787550241053.jpg",
+  "title": "年轻人要懂得的人生哲理",
+  "year": "2015",
+  "callnum": "158.10835"
+},
+{
+  "_id": {
+    "$oid": "65438e9d9434478daa15b3ce"
+  },
+  "isbn": "9787511337672",
+  "author": "柯南道尔",
+  "language": "簡體中文",
+  "pages": "431",
+  "publisher": "Z中國華僑出版社",
+  "thumbnail": "https://m.media-amazon.com/images/I/21X+9Kxg5KL.jpg",
+  "title": "福尔摩斯探案全集",
+  "year": "2013",
+  "callnum": "823.8"
+},
+{
+  "_id": {
+    "$oid": "65438f109434478daa15b3cf"
+  },
+  "isbn": "9789869279246",
+  "author": "陳志光",
+  "title": "攝影師鏡頭裡的美景地圖",
+  "year": "2016",
+  "publisher": "樂果文化",
+  "pages": "243",
+  "language": "繁體中文",
+  "thumbnail": "https://d26olvxuieoyaa.cloudfront.net/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9789869279246.jpg",
+  "callnum": "779.36"
+},
+{
+  "_id": {
+    "$oid": "65438f2d9434478daa15b3d0"
+  },
+  "isbn": "9787122340504",
+  "author": "雷依里",
+  "language": "简体中文",
+  "pages": "276",
+  "publisher": "化學工業出版社",
+  "thumbnail": "https://d26olvxuieoyaa.cloudfront.net/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9787122340504.jpg",
+  "title": "摄影构图与用光：排出美照的180个关键技巧",
+  "year": "2019",
+  "callnum": "775.0"
+},
+{
+  "_id": {
+    "$oid": "65438f9e9434478daa15b3d1"
+  },
+  "isbn": "9789570851090",
+  "author": "聖保羅 (Saint-Paul, Patrick) ",
+  "title": "低端人口 : 中國,是地下這幫鼠族撐起來的",
+  "year": "2018",
+  "publisher": "聯經",
+  "pages": "278",
+  "language": "繁體中文",
+  "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbuFYdYgN77WOXOKCyFxRnvvxEfGaDRYhIo7qhma79JDfNTiVukdqT7ry6YZHWpD_PRnY&usqp=CAU",
+  "callnum": "322.20922"
+},
+{
+  "_id": {
+    "$oid": "65438fba9434478daa15b3d2"
+  },
+  "isbn": "9789576581557",
+  "author": "凱雷 (Kelly, Scott)",
+  "title": "我在太空的340天",
+  "year": "2019",
+  "publisher": "三采發行",
+  "pages": "397",
+  "language": "繁體中文",
+  "thumbnail": "https://www.srbook.com.tw/upload_files/fonlego-rwd/prodpic/D_9789576581557_00.jpg",
+  "callnum": "305.56"
+},
+{
+  "_id": {
+    "$oid": "65438ff59434478daa15b3d3"
+  },
+  "isbn": "9789571377230",
+  "author": "賓斯坦 (Bernstein, David Siegel)",
+  "title": "科幻小說不是亂掰的 : 白日夢世界中的真實科學",
+  "year": "2019",
+  "publisher": "時報",
+  "pages": "415",
+  "language": "繁体中文",
+  "thumbnail": "https://d26olvxuieoyaa.cloudfront.net/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9789571377230.jpg",
+  "callnum": "629.450092"
+},
+{
+  "_id": {
+    "$oid": "6543901b9434478daa15b3d4"
+  },
+  "isbn": "9787521218732",
+  "author": "米歇 戴斯玛克特",
+  "language": "简体中文",
+  "pages": "279",
+  "publisher": "作家出版社",
+  "thumbnail": "https://m.media-amazon.com/images/I/41xJG7E7ltL._AC_UF1000,1000_QL80_.jpg",
+  "title": "海奥华预言",
+  "year": "2022",
+  "callnum": "629.450092"
+},
+{
+  "_id": {
+    "$oid": "654390789434478daa15b3d5"
+  },
+  "isbn": "9789571376417",
+  "author": "加來 道雄 (Kaku, Michio) ",
+  "title": "離開太陽系",
+  "year": "2018",
+  "publisher": "時報文化",
+  "pages": "342",
+  "language": "繁体中文",
+  "thumbnail": "https://www.cite.com.my/images/p_download/819627.jpg",
+  "callnum": "629.455"
+},
+{
+  "_id": {
+    "$oid": "654390ad2becc294e46223c9"
+  },
+  "isbn": "9789571048024",
+  "author": "井村 淳",
+  "title": "達人親授!高水準的風景&自然進階攝影術",
+  "year": "2012",
+  "publisher": "尖端",
+  "pages": "126",
+  "language": "繁體中文",
+  "thumbnail": "https://s.eslite.dev/upload/product/o/2680668120005/20190422123914470851.jpg",
+  "callnum": "775"
+},
+{
+  "_id": {
+    "$oid": "654390bc2becc294e46223ca"
+  },
+  "isbn": "9787533760090",
+  "author": "陈卫民",
+  "language": "简体中文",
+  "pages": "90",
+  "publisher": "安徽科学技术出版社",
+  "thumbnail": "https://m.media-amazon.com/images/I/81sKxt+LRXL._AC_UF1000,1000_QL80_.jpg",
+  "title": "哦，是这样拍出来的",
+  "year": "2013",
+  "callnum": "779"
+},
+{
+  "_id": {
+    "$oid": "6543910e2becc294e46223cb"
+  },
+  "isbn": "9789571380940",
+  "author": "Maki Li",
+  "title": "激辛數獨.  2,  254個高強度的頭腦體操",
+  "year": "2020",
+  "publisher": "時報文化",
+  "pages": "260",
+  "language": "繁體中文",
+  "thumbnail": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/084/89/0010848981.jpg&v=5e3a9941k&w=250&h=250",
+  "callnum": "793.74"
+},
+{
+  "_id": {
+    "$oid": "654391672becc294e46223cc"
+  },
+  "isbn": "9787516816981",
+  "author": "邓文庆",
+  "language": "简体中文",
+  "pages": "242",
+  "publisher": "台海出版社",
+  "thumbnail": "https://m.media-amazon.com/images/I/71-r3NyD21L._AC_UF1000,1000_QL80_.jpg",
+  "title": "聪明人不会输给情绪",
+  "year": "2018",
+  "callnum": "152.47"
+},
+{
+  "_id": {
+    "$oid": "654391b82becc294e46223cd"
+  },
+  "isbn": "9789869867191",
+  "author": "高原",
+  "title": "為何我們總是想得太多, 卻做得太少?",
+  "year": "2020",
+  "publisher": "遠足文化",
+  "pages": "285",
+  "language": "繁體中文",
+  "thumbnail": "https://d26olvxuieoyaa.cloudfront.net/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9789869867191.jpg",
+  "callnum": "158.1"
+},
+{
+  "_id": {
+    "$oid": "654391e78a3f41e9cafc9443"
+  },
+  "isbn": "9789578325043",
+  "author": "簡樸生",
+  "language": "繁體中文",
+  "pages": "234",
+  "publisher": "驛站文化",
+  "thumbnail": "https://www.books.com.tw/img/001/002/99/0010029929.jpg",
+  "title": "快樂E-Mail",
+  "year": "1998",
+  "callnum": "152.42"
+},
+{
+  "_id": {
+    "$oid": "654392558a3f41e9cafc9444"
+  },
+  "isbn": "9789571379678",
+  "author": "小川直樹",
+  "title": "人前で話すための聞いてもらう技術. 中文",
+  "year": "2019",
+  "publisher": "時報文化",
+  "pages": "213",
+  "language": "繁體中文",
+  "thumbnail": "https://d26olvxuieoyaa.cloudfront.net/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9789571379678.jpg",
+  "callnum": "302.2242"
+},
+{
+  "_id": {
+    "$oid": "6543926d8a3f41e9cafc9445"
+  },
+  "isbn": "9789860761405",
+  "author": "刘轩",
+  "title": "唤醒内在的学习力",
+  "year": "2022",
+  "publisher": "大眾國際書局",
+  "pages": "213",
+  "language": "繁體中文",
+  "thumbnail": "https://d26olvxuieoyaa.cloudfront.net/catalog/product/cache/3/small_image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/9/7/9789860761405_b1.jpg",
+  "callnum": "371.30281"
+},
+{
+  "_id": {
+    "$oid": "6543929e8a3f41e9cafc9446"
+  },
+  "isbn": "9789571392967",
+  "author": "崔 大鎬",
+  "title": "我的事,我自己會操心",
+  "year": "2021",
+  "publisher": "時報文化",
+  "pages": "189",
+  "language": "繁體中文",
+  "thumbnail": "https://lzd-img-global.slatic.net/g/p/333964666282a5ce7f5b3f4bfb1fb69d.jpg_720x720q80.jpg",
+  "callnum": "152.5"
+},
+{
+  "_id": {
+    "$oid": "654392d68a3f41e9cafc9447"
+  },
+  "isbn": "9789673218387",
+  "author": "",
+  "language": "English",
+  "pages": "188",
+  "publisher": "SAP Publications",
+  "thumbnail": "https://sblss2eshop.sblbooks.com/image/sblbooks/image/data/all_product_images/product-23859/9789673218387.jpg",
+  "title": "Kangaroo Math Competiton Malaysia 2022 STUDENT",
+  "year": "2023",
+  "callnum": "510.76"
+},
+{
+  "_id": {
+    "$oid": "654395b4999f84b76ea2da6a"
+  },
+  "isbn": "9789831694633",
+  "author": "董总",
+  "language": "简体中文",
+  "pages": "399",
+  "publisher": "董总",
+  "thumbnail": "https://publisher.dongzong.my/image/dongzong/image/data/all_product_images/product-1870/XeBonUho1582270650.jpg",
+  "title": "高中适用物理下册",
+  "year": "2020",
+  "callnum": "530.071 v3"
+},
+{
+  "_id": {
+    "$oid": "6543961f999f84b76ea2da6b"
+  },
+  "isbn": "9789831694435",
+  "author": "董总",
+  "language": "简体中文",
+  "pages": "364",
+  "publisher": "董总",
+  "thumbnail": "https://publisher.dongzong.my/image/dongzong/image/cache/data/all_product_images/product-1738/physical(b)-2303x3189.jpg",
+  "title": "高中适用物理中册",
+  "year": "2021",
+  "callnum": "530.071 v2"
+},
+{
+  "_id": {
+    "$oid": "6543965f999f84b76ea2da6c"
+  },
+  "isbn": "9789831694237",
+  "author": "董总",
+  "language": "简体中文",
+  "pages": "401",
+  "publisher": "董总",
+  "thumbnail": "https://publisher.dongzong.my/image/dongzong/image/data/all_product_images/product-1723/physical(a).jpg",
+  "title": "高中适用物理上册",
+  "year": "2020",
+  "callnum": "530.071 v1"
+},
+{
+  "_id": {
+    "$oid": "654396e4999f84b76ea2da6d"
+  },
+  "isbn": "9787100187541",
+  "author": "伊恩 斯图尔特",
+  "language": "简体中文",
+  "pages": "178",
+  "publisher": "商务印书馆",
+  "thumbnail": "https://sowebook.com/wp-content/uploads/2022/09/29380744-1_u_3.jpg",
+  "title": "给年轻数学人的信",
+  "year": "2022",
+  "callnum": "510"
+},
+{
+  "_id": {
+    "$oid": "65439724999f84b76ea2da6e"
+  },
+  "isbn": "9787115485076",
+  "author": "神永正博",
+  "title": "超入門微分積分. 中文",
+  "year": "2018",
+  "publisher": "人民邮电",
+  "pages": "213",
+  "language": "繁體中文",
+  "thumbnail": "https://m.media-amazon.com/images/I/71JeYElMv6L._AC_UF894,1000_QL80_.jpg",
+  "callnum": "517.1"
+},
+{
+  "_id": {
+    "$oid": "65441e39913904bf8e065773"
+  },
+  "isbn": "9789831694244",
+  "author": "董总",
+  "language": "简体中文",
+  "pages": "448",
+  "publisher": "董总",
+  "thumbnail": "https://publisher.dongzong.my/image/dongzong/image/cache/data/all_product_images/product-1724/chemisrty(a)-2244x3071.jpg",
+  "title": "高中适用化学上册",
+  "year": "2017",
+  "callnum": "540.71 v1"
+},
+{
+  "_id": {
+    "$oid": "65441e97913904bf8e065774"
+  },
+  "isbn": "9789831694619",
+  "author": "董总",
+  "language": "简体中文",
+  "pages": "308",
+  "publisher": "董总",
+  "thumbnail": "https://publisher.dongzong.my/image/dongzong/image/data/all_product_images/product-1851/S3WS3c6c1579075673.jpg",
+  "title": "高中适用化学下册",
+  "year": "2019",
+  "callnum": "540.71 v3"
+},
+{
+  "_id": {
+    "$oid": "65445a9d913904bf8e065775"
+  },
+  "isbn": "9789831694220",
+  "author": "董总",
+  "language": "简体中文",
+  "pages": "398",
+  "publisher": "董总",
+  "thumbnail": "https://publisher.dongzong.my/image/dongzong/image/cache/data/all_product_images/product-1722/biological(a)-2246x3071.jpg",
+  "title": "高中适用生物上册",
+  "year": "2017",
+  "callnum": "570.71 v1"
+},
+{
+  "_id": {
+    "$oid": "65445afe913904bf8e065776"
+  },
+  "isbn": "9789837702738",
+  "author": "Lam Chok Sang, Ng Ow Ving, Lim Seang Kee",
+  "language": "English",
+  "pages": "400",
+  "publisher": "Sasbadi",
+  "thumbnail": "https://media.karousell.com/media/photos/products/2023/8/10/stpm_physics_sasbadi_1691679356_b8bc6967_progressive.jpg",
+  "title": "Pre-U Text STPM Physics Term 3",
+  "year": "2017",
+  "callnum": "530.0171 v3"
+},
+{
+  "_id": {
+    "$oid": "65445b50913904bf8e065777"
+  },
+  "isbn": "9789837702653",
+  "author": "Lam Chok Sang, Lim Seang Kee",
+  "language": "English",
+  "pages": "286",
+  "publisher": "Sasbadi",
+  "thumbnail": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t1.6435-9/141065403_3595023317219460_4118399584344974446_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=DR8cFTpDTeoAX8Dfpb-&_nc_ht=scontent.fmkz1-1.fna&oh=00_AfBJN7F9xylo0YVBLRf0LJvk36WrypAH30HU4_KR3JtMxw&oe=656BCB65",
+  "title": "Pre-U Text STPM Physics Term 1",
+  "year": "2018",
+  "callnum": "530.0171 v1"
+},
+{
+  "_id": {
+    "$oid": "65445b8d913904bf8e065778"
+  },
+  "isbn": "9789835978890",
+  "author": "Ng Ow Ving",
+  "language": "English",
+  "pages": "374",
+  "publisher": "Sasbadi",
+  "thumbnail": "https://media.karousell.com/media/photos/products/2023/7/19/stpm_physics_second_term_sasba_1689761896_9182c053",
+  "title": "Pre-U Text STPM Physics Term 2",
+  "year": "2016",
+  "callnum": "530.0171 v2"
+},
+{
+  "_id": {
+    "$oid": "65445d5c913904bf8e065779"
+  },
+  "isbn": "9789670000398",
+  "author": "Norhafizan binti Abdul Wahab, Noor Irina binti Muharam, Ahmed Izzauddin Shah bin Ibrahim, Lim Kim Liang",
+  "language": "English",
+  "pages": "380",
+  "publisher": "Penerbit Ilmu Bakti",
+  "thumbnail": "https://mehrajbooks.com.my/image/cache/catalog/May%202022/9789670000398-375x500.jpg",
+  "title": "Revisi Cepat SPM Physics",
+  "year": "",
+  "callnum": "530.076"
+},
+{
+  "_id": {
+    "$oid": "65445e5f913904bf8e06577a"
+  },
+  "isbn": "9789672502524",
+  "author": "Ooi Boon Thai, Gwendolin Lu Lee Hung",
+  "language": "English",
+  "pages": "540",
+  "publisher": "EPH",
+  "thumbnail": "https://www.paykini.com/image/cache/wkseller/3018/POPULAR/REVISION%20BOOKS/SPM/29.11.21/002-1000x1000.jpg",
+  "title": "EXCEL Science SPM",
+  "year": "2022",
+  "callnum": "507.1"
+},
+{
+  "_id": {
+    "$oid": "65445ea2913904bf8e06577b"
+  },
+  "isbn": "9786297537818",
+  "author": "Yew Kok Leh, Chang See Leong, Abd Halim Bin Jama'in",
+  "language": "English",
+  "pages": "498",
+  "publisher": "Penerbitan Pelangi",
+  "thumbnail": "https://store.pelangibooks.com/image/cache/catalog/PPSB%20Academic/2023%20Focus%20SPM/CC038543-550x550.png",
+  "title": "FOCUS Physics SPM Form 4 • 5 KSSM",
+  "year": "2023",
+  "callnum": "530.0761"
+},
+{
+  "_id": {
+    "$oid": "65445f4e913904bf8e06577c"
+  },
+  "isbn": "9789834716660",
+  "author": "Foo Seng Teek, Yee Cheng Teik, Lee Beng Hin, Chong Geok Chuan, Jonathan Wong",
+  "language": "English",
+  "pages": "642",
+  "publisher": "Oxford Fajar",
+  "thumbnail": "https://down-my.img.susercontent.com/file/5601689945004fc9aee6b53d3ec46e9a",
+  "title": "Success Physics SPM",
+  "year": "2016",
+  "callnum": "530.0762"
+},
+{
+  "_id": {
+    "$oid": "65446941913904bf8e06577d"
+  },
+  "isbn": "9789834729127",
+  "author": "Chia Lok Thye, Jacqueline R. S., Nalini B.",
+  "language": "English",
+  "pages": "330",
+  "publisher": "Oxford Fajar",
+  "thumbnail": "https://my-test-11.slatic.net/p/e816568b44d922ac5035b32a7299ed4b.jpg",
+  "title": "ACE AHEAD STPM Text Biology 3rd Semester Third Edition",
+  "year": "2019",
+  "callnum": "570.76"
+},
+{
+  "_id": {
+    "$oid": "6544698c913904bf8e06577e"
+  },
+  "isbn": "9789830089881",
+  "author": "Y.K. Richard, David Tan",
+  "language": "English",
+  "pages": "232",
+  "publisher": "Penerbitan Pelangi",
+  "thumbnail": "https://online.anyflip.com/dppxh/grzo/files/mobile/1.jpg?1592212817",
+  "title": "Pre-U STPM Text Biology Term 1",
+  "year": "2018",
+  "callnum": "570.711 v1"
+},
+{
+  "_id": {
+    "$oid": "654469db913904bf8e06577f"
+  },
+  "isbn": "9789673217168",
+  "author": "Ummu Aqi Ifa",
+  "language": "English",
+  "pages": "236",
+  "publisher": "SAP Publications",
+  "thumbnail": "https://media.karousell.com/media/photos/products/2023/5/27/sap_biology_for_matriculation__1685167350_017b6160_progressive.jpg",
+  "title": "Biology for Matriculation Semester 2",
+  "year": "2020",
+  "callnum": "570.712 v2"
+},
+{
+  "_id": {
+    "$oid": "65446a0a913904bf8e065780"
+  },
+  "isbn": "9789672221340",
+  "author": "",
+  "language": "English",
+  "pages": "133",
+  "publisher": "Penerbit Mahir",
+  "thumbnail": "https://cdn.pgmall.my/image/cache/catalog/seller_store/store14280/product/63c13dce303087b7ff65dbf38000a1064403ef3801e5f-400x400.jpeg",
+  "title": "Siri Topikal Kertas Percubaan Tahun-Tahun Lepas SBP SPM Kimia (Dwibahasa) Tingkatan 4 & 5",
+  "year": "2019",
+  "callnum": "570.76"
+},
+{
+  "_id": {
+    "$oid": "65446a8a913904bf8e065781"
+  },
+  "isbn": "9789834728298",
+  "author": "Tan Yin Toon, Sheila Shamuganathan",
+  "language": "English",
+  "pages": "485",
+  "publisher": "Oxford Fajar",
+  "thumbnail": "https://mphonline.com/cdn/shop/products/74562bec98d1442d952b6f03330cdf10.jpg?v=1610346910",
+  "title": "Chemistry for Matriculation Semester 2 5th Edition Updated",
+  "year": "2019",
+  "callnum": "540.76"
+},
+{
+  "_id": {
+    "$oid": "65446ad8913904bf8e065782"
+  },
+  "isbn": "9789834722982",
+  "author": "Tan Yin Toon, Loh Wai Leng, Tan On Tin",
+  "language": "English",
+  "pages": "594",
+  "publisher": "Oxford Fajar",
+  "thumbnail": "https://www.adambooksonline.com.my/images/shop/virtuemart/product/success%20chemistry%20spm.jpg",
+  "title": "Success Chemistry SPM",
+  "year": "2017",
+  "callnum": "540.76"
+},
+{
+  "_id": {
+    "$oid": "654470d4913904bf8e065783"
+  },
+  "isbn": "9780486134666",
+  "title": "Advanced Calculus",
+  "author": "David V. Widder",
+  "publisher": "Dover Publications, Incorporated",
+  "year": "2012",
+  "pages": "520",
+  "language": "English",
+  "thumbnail": "http://libgen.is/covers/2860000/a2720061a66538688f589e24869c0086-g.jpg",
+  "callnum": "517"
+},
+{
+  "_id": {
+    "$oid": "6544718c913904bf8e065784"
+  },
+  "isbn": "9780471456834",
+  "title": "Calculus and linear algebra Volume 1",
+  "author": "Wilfred Kaplan",
+  "publisher": "Wiley",
+  "year": "1970",
+  "pages": "1197",
+  "language": "English",
+  "thumbnail": "https://covers.openlibrary.org/b/isbn/9780471456834-M.jpg",
+  "callnum": "517"
+},
+{
+  "_id": {
+    "$oid": "654471eb913904bf8e065785"
+  },
+  "isbn": "9789810537920",
+  "author": "CS Toh",
+  "language": "English",
+  "pages": "",
+  "publisher": "Cosmic",
+  "thumbnail": "",
+  "title": "A-Level Challenging Questions Mathematics",
+  "year": "2005",
+  "callnum": "517"
+},
+{
+  "_id": {
+    "$oid": "654472ea913904bf8e065786"
+  },
+  "isbn": "9781840850000",
+  "title": "A Level Mathematics (A Level Textbooks)",
+  "author": "R.C. Solomon",
+  "publisher": "Letts Educational Ltd",
+  "year": "1997",
+  "pages": "489",
+  "language": "English",
+  "thumbnail": "https://covers.openlibrary.org/b/isbn/9781840850000-M.jpg",
+  "callnum": "510"
+},
+{
+  "_id": {
+    "$oid": "65447366913904bf8e065787"
+  },
+  "isbn": "9780333396599",
+  "title": "Work out principles of accounts 'O' Level and GCSE",
+  "author": "P. Stevens",
+  "publisher": "Macmillan",
+  "year": "1986",
+  "pages": "193",
+  "language": "English",
+  "thumbnail": "https://media.springernature.com/full/springer-static/cover-hires/book/978-1-349-18141-4?as=webp",
+  "callnum": "510"
+},
+{
+  "_id": {
+    "$oid": "65447527913904bf8e065788"
+  },
+  "isbn": "9679924092",
+  "author": "London Chamber of Commerce & Industry",
+  "language": "English",
+  "pages": "283",
+  "publisher": "SBT Professional Publicatuons",
+  "thumbnail": "",
+  "title": "Book-Keeping and Accounts Q&A: Second Level",
+  "year": "1990",
+  "callnum": "657.076"
+},
+{
+  "_id": {
+    "$oid": "654476c2913904bf8e065789"
+  },
+  "isbn": "9780201048100",
+  "author": "Edwin E. Moise",
+  "language": "English",
+  "pages": "788",
+  "publisher": "Addison-Wesley",
+  "thumbnail": "",
+  "title": "Calculus",
+  "year": "1972",
+  "callnum": "657.076"
+},
+{
+  "_id": {
+    "$oid": "65447774913904bf8e06578a"
+  },
+  "isbn": "9789571204109",
+  "author": "美國教育協會",
+  "language": "繁體中文",
+  "pages": "889",
+  "publisher": "曉園出版社",
+  "thumbnail": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/008/00/0010080069.jpg&v=4641869ak&w=250&h=250",
+  "title": "微積分題庫",
+  "year": "1992",
+  "callnum": "517"
+},
+{
+  "_id": {
+    "$oid": "6544784478df90539a35a0b2"
+  },
+  "isbn": "",
+  "title": "LCC Book Keeping Latest Questions and Answers Sixth Edition",
+  "author": "M.A. Hamid M.A., B.Com., LL.B., F.S.A.A.",
+  "publisher": "Keynes School Publication",
+  "year": "",
+  "pages": "267",
+  "language": "English",
+  "thumbnail": "",
+  "callnum": "657.2"
+},
+{
+  "_id": {
+    "$oid": "6544791d78df90539a35a0b3"
+  },
+  "isbn": "",
+  "title": "Mathematics Level O Solution Book (Part One)",
+  "author": "KUMON",
+  "publisher": "Kumon Institute of Education",
+  "year": "2018",
+  "pages": "",
+  "language": "English",
+  "thumbnail": "",
+  "callnum": "517.01 v1"
+},
+{
+  "_id": {
+    "$oid": "6544799078df90539a35a0b4"
+  },
+  "isbn": "",
+  "title": "Mathematics Level O Solution Book (Part Two)",
+  "author": "KUMON",
+  "publisher": "Kumon Institute of Education",
+  "year": "2018",
+  "pages": "",
+  "language": "English",
+  "thumbnail": "",
+  "callnum": "517.01 v2"
+}]

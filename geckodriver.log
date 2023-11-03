@@ -1,0 +1,125 @@
+1698989812557	geckodriver	INFO	Listening on 127.0.0.1:56430
+1698989812968	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/nq/748vnplx4qlcr25v78h5s0q40000gn/T/rust_mozprofilerDijmq"
+WebDriver BiDi listening on ws://127.0.0.1:56431
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:56431/devtools/browser/7ccc2ac8-5be1-4cc5-95dc-dca1cf8d61b0
+1698989840435	geckodriver	INFO	Listening on 127.0.0.1:56485
+1698989840444	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/nq/748vnplx4qlcr25v78h5s0q40000gn/T/rust_mozprofile0WTQdh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698989841184	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1698989841311	Marionette	INFO	Listening on port 56497
+WebDriver BiDi listening on ws://127.0.0.1:56486
+Read port: 56497
+1698989841424	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:56486/devtools/browser/ea465861-9574-4655-8d6c-ab95f9d2966e
+JavaScript warning: https://www.youtube.com/s/desktop/7ea5dfab/jsbin/desktop_polymer_css_polymer_serving_disabled.vflset/desktop_polymer_css_polymer_serving_disabled.js, line 2590: Script terminated by timeout at:
+sp.prototype.transition@https://www.youtube.com/s/desktop/7ea5dfab/jsbin/desktop_polymer_css_polymer_serving_disabled.vflset/desktop_polymer_css_polymer_serving_disabled.js:2590:33
+YI/<@https://www.youtube.com/s/desktop/7ea5dfab/jsbin/desktop_polymer_css_polymer_serving_disabled.vflset/desktop_polymer_css_polymer_serving_disabled.js:8973:114
+
+1698989871496	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1698989881207	geckodriver	INFO	Listening on 127.0.0.1:56575
+1698989881734	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/nq/748vnplx4qlcr25v78h5s0q40000gn/T/rust_mozprofileY4hveO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698989882063	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1698989882154	Marionette	INFO	Listening on port 56586
+WebDriver BiDi listening on ws://127.0.0.1:56576
+Read port: 56586
+1698989882309	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:56576/devtools/browser/653ebf0b-4a71-4f4a-8cde-8b1a49749918
+1698989898716	Marionette	INFO	Stopped listening on port 56586
+1698989900656	Marionette	INFO	Stopped listening on port 56497
+1698989918252	geckodriver	INFO	Listening on 127.0.0.1:56625
+1698989918771	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/nq/748vnplx4qlcr25v78h5s0q40000gn/T/rust_mozprofilevQGGXL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698989919109	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1698989919208	Marionette	INFO	Listening on port 56637
+WebDriver BiDi listening on ws://127.0.0.1:56626
+Read port: 56637
+1698989919342	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:56626/devtools/browser/4e442be5-c8b8-4f1c-9ad7-556be3bf52fe
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js, line 6855: Script terminated by timeout at:
+g.cU@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:6855:20
+g.k.Az@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:12293:27
+g.k.getProgressState@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:10195:150
+g.k.Kc@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:10764:34
+g.OB/<@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:1913:65
+g.k.oa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:8218:291
+YY.prototype.oa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:11436:275
+g.k.oa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:10274:197
+g.k.oa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:10415:41
+g.k.y9@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:12314:27
+g.k.oa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:8218:291
+g.cG.prototype.oa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:8600:72
+g.k.Kc@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:12176:227
+f@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:12175:99
+g.OB/<@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/en_US/base.js:1913:65
+
+1698989931025	Marionette	INFO	Stopped listening on port 56637
+1698989936871	geckodriver	INFO	Listening on 127.0.0.1:56698
+1698989937385	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/nq/748vnplx4qlcr25v78h5s0q40000gn/T/rust_mozprofileDt8fKf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698989937710	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1698989937801	Marionette	INFO	Listening on port 56710
+Read port: 56710
+WebDriver BiDi listening on ws://127.0.0.1:56699
+1698989937851	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:56699/devtools/browser/fecd1db5-76e3-4ae2-a9b8-3b380a0358e3
+1698989955505	Marionette	INFO	Stopped listening on port 56710
+1698989958872	geckodriver	INFO	Listening on 127.0.0.1:56752
+1698989959381	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... les/pxenk4di.default-release" "--remote-debugging-port" "56753" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote"
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+1698989979644	geckodriver	INFO	Listening on 127.0.0.1:56779
+1698989979648	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... les/pxenk4di.default-release" "--remote-debugging-port" "56780" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698989980048	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1698989980138	Marionette	INFO	Listening on port 56787
+Read port: 56787
+WebDriver BiDi listening on ws://127.0.0.1:56780
+1698989980285	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.sys.mjs :: runSafeSyncWithoutClone :: line 62"  data: no] undefined 62
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.sys.mjs:62:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.sys.mjs:530:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.sys.mjs:73:37
+inject/cssPromise<@resource://gre/modules/ExtensionContent.sys.mjs:530:36
+]]
+DevTools listening on ws://127.0.0.1:56780/devtools/browser/2a684978-38fa-43f9-ac97-a6187b377d32
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2001))
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+JavaScript error: moz-extension://dde2aa44-2be5-4e51-a9b8-fbde60120d3c/js/vapi-client.js, line 202: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_api/v1?ray=82024787dcb24095, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_api/v1?ray=820247b63f394095, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://dde2aa44-2be5-4e51-a9b8-fbde60120d3c/js/vapi-client.js, line 202: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_api/v1?ray=820247f75e464095, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://dde2aa44-2be5-4e51-a9b8-fbde60120d3c/js/vapi-client.js, line 202: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 3741: TypeError: this._windows[aWindow.__SSi] is undefined
+JavaScript error: moz-extension://4245a21a-18c4-4888-90af-6e989045b662/src/js/Grammarly-bg.js, line 2: TypeError: (destructured parameter) is undefined
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.sys.mjs :: runSafeSyncWithoutClone :: line 62"  data: no] undefined 62
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.sys.mjs:62:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.sys.mjs:530:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.sys.mjs:73:37
+inject/cssPromise<@resource://gre/modules/ExtensionContent.sys.mjs:530:36
+]]
+JavaScript error: resource://gre/modules/ConduitsChild.sys.mjs, line 108: Error: sendRemoveListener on closed conduit nimbusscreencaptureff@everhelper.me.137438953784
+1698990027278	Marionette	INFO	Stopped listening on port 56787

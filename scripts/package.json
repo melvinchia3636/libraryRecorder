@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "chinese-to-pinyin": "^1.3.1"
+  }
+}

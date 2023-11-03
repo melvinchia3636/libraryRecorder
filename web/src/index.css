@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600&family=Urbanist:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Urbanist", "Noto Sans SC", sans-serif;
+}

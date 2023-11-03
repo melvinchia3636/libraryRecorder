@@ -139,6 +139,7 @@ function Main({ navigation }: { navigation: any }) {
       },
       body: JSON.stringify({
         isbn: isbn,
+        callnum: "",
         ...data,
       }),
     })
@@ -202,7 +203,6 @@ function Main({ navigation }: { navigation: any }) {
     type: string;
     data: string;
   }) => {
-    console.log(data);
     if (!bookList.some((e) => e.isbn === data) && parseInt(type) === 32) {
       setIsScanning(false);
       playSound(data);
@@ -221,7 +221,7 @@ function Main({ navigation }: { navigation: any }) {
       <ScrollView className="w-full mb-8 px-6">
         {bookList.map((book, index) => (
           <View
-            key={book.isbn}
+            key={book.callnum}
             className="border-b border-stone-300 py-4 px-2 flex flex-col justify-start"
           >
             {book.thumbnail && (
@@ -270,6 +270,14 @@ function Main({ navigation }: { navigation: any }) {
                 <Feather name="edit-2" size={18} color="rgb(168,162,158)" />
               </Pressable>
             </View>
+            <Text
+              style={{
+                fontFamily: "Inter_400Regular",
+              }}
+              className="text-stone-500 mt-2"
+            >
+              Call Number: {book.callnum}
+            </Text>
             <Text
               style={{
                 fontFamily: "Inter_400Regular",
@@ -344,6 +352,7 @@ function Main({ navigation }: { navigation: any }) {
 
 const Edit = ({ navigation, route }: { navigation: any; route: any }) => {
   const [isbn, setIsbn] = useState("");
+  const [callnum, setCallnum] = useState("");
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [publisher, setPublisher] = useState("");
@@ -364,6 +373,7 @@ const Edit = ({ navigation, route }: { navigation: any; route: any }) => {
       .then((response) => response.json())
       .then((responseJson) => {
         setIsbn(responseJson.isbn);
+        setCallnum(responseJson.callnum || "");
         setTitle(responseJson.title || "");
         setAuthor(responseJson.author || "");
         setPublisher(responseJson.publisher || "");
@@ -376,7 +386,7 @@ const Edit = ({ navigation, route }: { navigation: any; route: any }) => {
 
   return (
     <View className="w-full h-full p-8 bg-stone-100 flex justify-between flex-col">
-      <View>
+      <ScrollView className="w-full mb-8">
         <Text
           style={{
             fontFamily: "Inter_500Medium",
@@ -386,13 +396,14 @@ const Edit = ({ navigation, route }: { navigation: any; route: any }) => {
           ISBN: {isbn}
         </Text>
         <Input label="Title" state={title} setState={setTitle} />
+        <Input label="Call Number" state={callnum} setState={setCallnum} />
         <Input label="Author" state={author} setState={setAuthor} />
         <Input label="Publisher" state={publisher} setState={setPublisher} />
         <Input label="Year" state={year} setState={setYear} />
         <Input label="Pages" state={pages} setState={setPages} />
         <Input label="Language" state={language} setState={setLanguage} />
         <Input label="Thumbnail" state={thumbnail} setState={setThumbnail} />
-      </View>
+      </ScrollView>
       <Pressable
         onPress={() => {
           setIsLoading(true);
@@ -404,6 +415,7 @@ const Edit = ({ navigation, route }: { navigation: any; route: any }) => {
             },
             body: JSON.stringify({
               isbn: isbn,
+              callnum: callnum,
               title: title,
               author: author,
               publisher: publisher,
