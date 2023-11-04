@@ -1,8 +1,22 @@
 import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
 
+interface Book {
+  _id: {
+    $oid: string;
+  };
+  callnum: string;
+  title: string;
+  author: string;
+  isbn: string;
+  thumbnail: string;
+  publisher: string;
+  year: string;
+  pages: string;
+}
+
 function App() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Book[]>([]);
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
@@ -30,45 +44,71 @@ function App() {
         </h1>
       </nav>
       <div className="grid grid-cols-5 p-16 pt-32">
-        {data.map((book) => (
-          <div className="p-8 flex flex-col">
-            <img
-              onClick={() => {
-                const newThumbnail = prompt("Enter new thumbnail URL");
-                if (newThumbnail) {
-                  fetch(`http://localhost:3000/update/${book._id}`, {
-                    method: "PUT",
-                    headers: {
-                      "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                      thumbnail: newThumbnail,
-                    }),
-                  })
-                    .then((res) => res.json())
-                    .then(() => {
-                      alert("Thumbnail updated!");
-                      window.location.reload();
-                    });
+        {data
+          .sort((a, b) => a.callnum.localeCompare(b.callnum))
+          .map((book) => (
+            <div className="p-8 flex flex-col">
+              <img
+                onClick={() => {
+                  const newData = prompt("Enter new data", book.thumbnail);
+                  if (newData) {
+                    fetch(`http://localhost:3000/update/${book._id}`, {
+                      method: "PUT",
+                      headers: {
+                        "Content-Type": "application/json",
+                      },
+                      body: JSON.stringify({
+                        thumbnail: newData,
+                      }),
+                    })
+                      .then((res) => res.json())
+                      .then(() => {
+                        alert("Data updated!");
+                        window.location.reload();
+                      });
+                  }
+                }}
+                src={
+                  book.thumbnail ||
+                  "https://placehold.co/300x400?text=No+Image&font=Lato"
                 }
-              }}
-              src={
-                book.thumbnail ||
-                "https://placehold.co/300x400?text=No+Image&font=Lato"
-              }
-              alt={book.title}
-              referrerPolicy="no-referrer"
-              className="w-48 h-64 object-cover rounded-md"
-            />
+                alt={book.title}
+                referrerPolicy="no-referrer"
+                className="w-48 h-64 object-cover rounded-md"
+              />
 
-            <p className="text-xs mt-4 font-mono border-2 border-stone-600 rounded-md px-2 py-2 text-center">
-              {book.callnum}
-            </p>
-            <p className="text-sm mt-2">{book.isbn}</p>
-            <h2 className="text-xl font-medium">{book.title}</h2>
-            <p className="text-sm">{book.author}</p>
-          </div>
-        ))}
+              <button
+                onClick={() => {
+                  const newCallNum = prompt(
+                    "Enter new Call Number",
+                    book.callnum
+                  );
+                  if (newCallNum) {
+                    fetch(`http://localhost:3000/update/${book._id}`, {
+                      method: "PUT",
+                      headers: {
+                        "Content-Type": "application/json",
+                      },
+                      body: JSON.stringify({
+                        callnum: newCallNum,
+                      }),
+                    })
+                      .then((res) => res.json())
+                      .then(() => {
+                        alert("Call Number updated!");
+                        window.location.reload();
+                      });
+                  }
+                }}
+                className="text-xs mt-4 font-mono border-2 border-stone-600 rounded-md px-2 py-2 text-center"
+              >
+                {book.callnum}
+              </button>
+              <p className="text-sm mt-2">{book.isbn}</p>
+              <h2 className="text-xl font-medium">{book.title}</h2>
+              <p className="text-sm">{book.author}</p>
+            </div>
+          ))}
       </div>
     </main>
   );

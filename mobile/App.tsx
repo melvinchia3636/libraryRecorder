@@ -219,107 +219,109 @@ function Main({ navigation }: { navigation: any }) {
   return (
     <View className="w-full h-screen bg-stone-100 py-6 flex items-center justify-between">
       <ScrollView className="w-full mb-8 px-6">
-        {bookList.map((book, index) => (
-          <View
-            key={book.callnum}
-            className="border-b border-stone-300 py-4 px-2 flex flex-col justify-start"
-          >
-            {book.thumbnail && (
-              <Image
-                source={{
-                  uri: book.thumbnail,
-                }}
-                style={{
-                  height: 200,
-                  objectFit: "contain",
-                  width: "50%",
-                  marginBottom: 10,
-                  backgroundColor: "rgb(231,229,228)",
-                  borderRadius: 6,
-                }}
-              />
-            )}
-            <Text
-              className="text-left w-full text-xs text-stone-400"
-              key={index}
-              style={{
-                fontFamily: "Inter_500Medium",
-              }}
+        {bookList
+          .sort((a, b) => a.callnum?.localeCompare(b?.callnum))
+          .map((book, index) => (
+            <View
+              key={book.callnum}
+              className="border-b border-stone-300 py-4 px-2 flex flex-col justify-start"
             >
-              {book.isbn}
-            </Text>
-            <View className="flex flex-row justify-between items-center">
+              {book.thumbnail && (
+                <Image
+                  source={{
+                    uri: book.thumbnail,
+                  }}
+                  style={{
+                    height: 200,
+                    objectFit: "contain",
+                    width: "50%",
+                    marginBottom: 10,
+                    backgroundColor: "rgb(231,229,228)",
+                    borderRadius: 6,
+                  }}
+                />
+              )}
               <Text
-                className="text-xl text-stone-600 flex-shrink"
-                numberOfLines={2}
+                className="text-left w-full text-xs text-stone-400"
+                key={index}
                 style={{
-                  fontFamily: "Inter_600SemiBold",
+                  fontFamily: "Inter_500Medium",
                 }}
               >
-                {book.title || "Untitled Book"}
+                {book.isbn}
               </Text>
-              <Pressable
-                className="ml-4"
-                onPress={() => {
-                  navigation.navigate("Edit", {
-                    _id: book._id,
-                    fetchBookList,
-                  });
+              <View className="flex flex-row justify-between items-center">
+                <Text
+                  className="text-xl text-stone-600 flex-shrink"
+                  numberOfLines={2}
+                  style={{
+                    fontFamily: "Inter_600SemiBold",
+                  }}
+                >
+                  {book.title || "Untitled Book"}
+                </Text>
+                <Pressable
+                  className="ml-4"
+                  onPress={() => {
+                    navigation.navigate("Edit", {
+                      _id: book._id,
+                      fetchBookList,
+                    });
+                  }}
+                >
+                  <Feather name="edit-2" size={18} color="rgb(168,162,158)" />
+                </Pressable>
+              </View>
+              <Text
+                style={{
+                  fontFamily: "Inter_400Regular",
                 }}
+                className="text-stone-500 mt-2"
               >
-                <Feather name="edit-2" size={18} color="rgb(168,162,158)" />
-              </Pressable>
+                Call Number: {book.callnum}
+              </Text>
+              <Text
+                style={{
+                  fontFamily: "Inter_400Regular",
+                }}
+                className="text-stone-500 mt-2"
+              >
+                Author: {book.author}
+              </Text>
+              <Text
+                style={{
+                  fontFamily: "Inter_400Regular",
+                }}
+                className="text-stone-500"
+              >
+                Publisher: {book.publisher}
+              </Text>
+              <Text
+                style={{
+                  fontFamily: "Inter_400Regular",
+                }}
+                className="text-stone-500"
+              >
+                Published: {book.year}
+              </Text>
+              <Text
+                style={{
+                  fontFamily: "Inter_400Regular",
+                }}
+                className="text-stone-500"
+              >
+                Pages: {book.pages}
+              </Text>
+              <Text
+                style={{
+                  fontFamily: "Inter_400Regular",
+                }}
+                className="text-stone-500"
+              >
+                Language: {book.language}
+              </Text>
             </View>
-            <Text
-              style={{
-                fontFamily: "Inter_400Regular",
-              }}
-              className="text-stone-500 mt-2"
-            >
-              Call Number: {book.callnum}
-            </Text>
-            <Text
-              style={{
-                fontFamily: "Inter_400Regular",
-              }}
-              className="text-stone-500 mt-2"
-            >
-              Author: {book.author}
-            </Text>
-            <Text
-              style={{
-                fontFamily: "Inter_400Regular",
-              }}
-              className="text-stone-500"
-            >
-              Publisher: {book.publisher}
-            </Text>
-            <Text
-              style={{
-                fontFamily: "Inter_400Regular",
-              }}
-              className="text-stone-500"
-            >
-              Published: {book.year}
-            </Text>
-            <Text
-              style={{
-                fontFamily: "Inter_400Regular",
-              }}
-              className="text-stone-500"
-            >
-              Pages: {book.pages}
-            </Text>
-            <Text
-              style={{
-                fontFamily: "Inter_400Regular",
-              }}
-              className="text-stone-500"
-            >
-              Language: {book.language}
-            </Text>
-          </View>
-        ))}
+          ))}
       </ScrollView>
       {!isScanning ? (
         <View className="px-8 w-full">

@@ -86,25 +86,27 @@ function cutterFunc(inputtxt) {
   return cutter;
 }
 
-// const books = JSON.parse(fs.readFileSync("library.book.json", "utf8"));
-// for (const book of books) {
-//   book.callnum = [
-//     book.callnum.trim(),
-//     cutterFunc(pinyin(book.author.split(",")[0])).trim(),
-//     book.year.trim(),
-//   ].join(" ");
-//   fetch(`http://localhost:3000/update/${book._id["$oid"]}`, {
-//     method: "PUT",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify({
-//       callnum: book.callnum,
-//     }),
-//   })
-//     .then((res) => res.json())
-//     .then((res) => console.log(res));
-//   console.log(book.title, " ", book.callnum);
-// }
-
-console.log(cutterFunc("Asma Ahmad Shariff"));
+const books = JSON.parse(fs.readFileSync("library.book.json", "utf8"));
+for (const book of books) {
+  if (book.callnum && book.callnum.split(" ").length <= 2) {
+    book.callnum = [
+      book.callnum.trim(),
+      cutterFunc(pinyin(book.author.split(",")[0])).trim(),
+      book.year.trim(),
+    ]
+      .join(" ")
+      .replace("  ", " ");
+    fetch(`http://localhost:3000/update/${book._id["$oid"]}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        callnum: book.callnum,
+      }),
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+    console.log(book.callnum);
+  }
+}
