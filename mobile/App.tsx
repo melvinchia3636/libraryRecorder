@@ -25,6 +25,20 @@ import {
 } from "react-native-paper";
 import { Feather } from "@expo/vector-icons";
 
+interface Book {
+  collectionId?: string;
+  id?: string;
+  callnum: string;
+  title: string;
+  author: string;
+  isbn: string;
+  thumbnail: string;
+  publisher: string;
+  language: string;
+  year: number;
+  pages: number;
+}
+
 function Input({
   state,
   setState,
@@ -72,64 +86,9 @@ function Main({ navigation }: { navigation: any }) {
   const [hasPermission, setHasPermission] = useState<boolean>();
 
   async function updateDatabase(isbn: string) {
-    const bookData = await fetch(`https://openlibrary.org/isbn/${isbn}.json`)
+    const data = await fetch("http://localhost:3000/find-autofill/" + isbn)
       .then((response) => response.json())
-      .catch(() => {
-        console.log(`https://openlibrary.org/isbn/${isbn}.json`);
-      });
-    let data: { [key: string]: any } = {};
-
-    if (bookData && bookData?.error !== "notfound") {
-      data = {
-        title: bookData?.title,
-        author: [],
-        publisher: bookData?.publishers?.join(", "),
-        year: bookData?.publish_date || "",
-        pages: String(bookData?.number_of_pages || ""),
-        language: [],
-        thumbnail: `https://covers.openlibrary.org/b/isbn/${isbn}-M.jpg`,
-      };
-      for (let lang of bookData?.languages || []) {
-        const language = await fetch(`https://openlibrary.org${lang?.key}.json`)
-          .then((response) => response.json())
-          .catch(() => {
-            console.log(`https://openlibrary.org${lang?.key}.json`);
-          });
-        data = {
-          ...data,
-          language: [...data.language, language?.name],
-        };
-      }
-      data.language = data.language.join(", ");
-
-      for (let author of bookData?.authors || []) {
-        const authorData = await fetch(
-          `https://openlibrary.org${author?.key}.json`
-        )
-          .then((response) => response.json())
-          .catch(() => {
-            console.log(`https://openlibrary.org${author?.key}.json`);
-          });
-        data = {
-          ...data,
-          author: [...data.author, authorData?.name],
-        };
-      }
-      data.author = data.author.join(", ");
-    } else {
-      const res = await fetch(
-        "http://192.168.0.105:3000/find-in-tw-library/" + isbn
-      )
-        .then((response) => response.json())
-        .catch(() => {});
-
-      if (JSON.stringify(res) !== "{}") {
-        data = {
-          ...data,
-          ...res,
-        };
-      }
-    }
+      .catch(() => ({}));
 
     fetch("http://192.168.0.105:3000/add", {
       method: "POST",
@@ -145,11 +104,13 @@ function Main({ navigation }: { navigation: any }) {
     })
       .then((response) => response.json())
       .then((responseJson) => {
-        console.log(responseJson);
         navigation.navigate("Edit", {
-          _id: responseJson.insertedId,
+          id: responseJson.id,
           fetchBookList,
         });
+      })
+      .catch((error) => {
+        console.error(error);
       });
   }
 
@@ -163,6 +124,14 @@ function Main({ navigation }: { navigation: any }) {
       ...bookList,
       {
         isbn: data,
+        callnum: "",
+        title: "",
+        author: "",
+        publisher: "",
+        year: 0,
+        pages: 0,
+        language: "",
+        thumbnail: "",
       },
     ]);
     updateDatabase(data);
@@ -173,16 +142,18 @@ function Main({ navigation }: { navigation: any }) {
     fetch("http://192.168.0.105:3000/list")
       .then((response) => response.json())
       .then((responseJson) => {
+        if (responseJson.error) {
+          console.error(responseJson.error);
+          return;
+        }
         setBookList(responseJson);
+      })
+      .catch((error) => {
+        console.error("Cannot connect to API");
       });
   }
 
-  const [bookList, setBookList] = useState<
-    {
-      isbn: string;
-      [key: string]: string | number | boolean | string[];
-    }[]
-  >([]);
+  const [bookList, setBookList] = useState<Book[]>([]);
   const [isScanning, setIsScanning] = useState(false);
 
   useEffect(() => {
@@ -229,7 +200,9 @@ function Main({ navigation }: { navigation: any }) {
               {book.thumbnail && (
                 <Image
                   source={{
-                    uri: book.thumbnail,
+                    uri: book.thumbnail
+                      ? `http://raspberrypi.local:8090/api/files/${book.collectionId}/${book.id}/${book.thumbnail}`
+                      : "https://placehold.co/300x400?text=No+Image&font=Lato",
                   }}
                   style={{
                     height: 200,
@@ -264,7 +237,7 @@ function Main({ navigation }: { navigation: any }) {
                   className="ml-4"
                   onPress={() => {
                     navigation.navigate("Edit", {
-                      _id: book._id,
+                      id: book.id,
                       fetchBookList,
                     });
                   }}
@@ -365,7 +338,7 @@ const Edit = ({ navigation, route }: { navigation: any; route: any }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    fetch("http://192.168.0.105:3000/list/" + route.params._id, {
+    fetch("http://192.168.0.105:3000/list/" + route.params.id, {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -409,7 +382,7 @@ const Edit = ({ navigation, route }: { navigation: any; route: any }) => {
       <Pressable
         onPress={() => {
           setIsLoading(true);
-          fetch("http://192.168.0.105:3000/update/" + route.params._id, {
+          fetch("http://192.168.0.105:3000/update/" + route.params.id, {
             method: "PUT",
             headers: {
               Accept: "application/json",

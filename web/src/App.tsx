@@ -2,17 +2,17 @@ import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
 
 interface Book {
-  _id: {
-    $oid: string;
-  };
+  collectionId: string;
+  id: string;
   callnum: string;
   title: string;
   author: string;
   isbn: string;
   thumbnail: string;
   publisher: string;
-  year: string;
-  pages: string;
+  language: string;
+  year: number;
+  pages: number;
 }
 
 function App() {
@@ -52,7 +52,7 @@ function App() {
                 onClick={() => {
                   const newData = prompt("Enter new data", book.thumbnail);
                   if (newData) {
-                    fetch(`http://localhost:3000/update/${book._id}`, {
+                    fetch(`http://localhost:3000/update/${book.id}`, {
                       method: "PUT",
                       headers: {
                         "Content-Type": "application/json",
@@ -69,8 +69,9 @@ function App() {
                   }
                 }}
                 src={
-                  book.thumbnail ||
-                  "https://placehold.co/300x400?text=No+Image&font=Lato"
+                  book.thumbnail
+                    ? `http://192.168.0.112:8090/api/files/${book.collectionId}/${book.id}/${book.thumbnail}`
+                    : "https://placehold.co/300x400?text=No+Image&font=Lato"
                 }
                 alt={book.title}
                 referrerPolicy="no-referrer"
@@ -84,7 +85,7 @@ function App() {
                     book.callnum
                   );
                   if (newCallNum) {
-                    fetch(`http://localhost:3000/update/${book._id}`, {
+                    fetch(`http://localhost:3000/update/${book.id}`, {
                       method: "PUT",
                       headers: {
                         "Content-Type": "application/json",
